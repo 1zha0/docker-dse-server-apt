@@ -6,6 +6,8 @@ FROM datastax/dse-server:%DSE_VERSION%
 # to mitigate any known vulnerabilities due to gaps caused by
 # offical image release cycle.
 
+USER root
+
 # Install required packages
 RUN set -eux \
     && apt-get update \
